@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 3001,
+    "name": "A",
+    "gender": "male",
+    "password": "123",
+    "email": "A@gmail.com",
+    "review": [4001],
+    "brand": [1003],
+    "perfume": [2001]
+  },
+  {
+    "_id": 3002,
+    "name": "A",
+    "gender": "Female",
+    "password": "123",
+    "email": "B@gmail.com",
+    "review": [4002],
+    "brand": [1001],
+    "perfume": [2001]
+  },
+  {
+    "_id": 3003,
+    "name": "A",
+    "gender": "Female",
+    "password": "123",
+    "email": "c@gmail.com",
+    "review": [4003],
+    "brand": [1002],
+    "perfume": [2001]
+  }
+]

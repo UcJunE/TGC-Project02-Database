@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 4001,
+    "name": "Alpha",
+    "email": "alpha@gmail.com",
+    "description": "This products is so so",
+    "dateTime": "2020-10-25",
+    "rating": "⭐⭐⭐",
+    "user": [3001],
+    "brand": [1002]
+  },
+  {
+    "_id": 4002,
+    "name": "Beta",
+    "email": "beta@gmail.com",
+    "description": "This products is good",
+    "dateTime": "2020-07-15",
+    "rating": "⭐⭐⭐⭐",
+    "user": [3001],
+    "brand": [1002]
+  },
+  {
+    "_id": 4003,
+    "name": "Delta",
+    "email": "delta@gmail.com",
+    "description": "This products is good",
+    "dateTime": "2021-07-07",
+    "rating": "⭐⭐⭐⭐⭐",
+    "user": [3001],
+    "brand": [1002]
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "_id": 2001,
+    "name": "CK One",
+    "description": "Lovers of green tea will treasure this timely creation",
+    "type": "synthetic",
+    "yearLaunch": 1994,
+    "price": 115.5,
+    "color": "white",
+    "pic": "url picture",
+    "occasion": "office",
+    "ingredient": {
+      "top-note": ["Bergamot", "Cardamom", "Tea", "Papaya", "Pineapple"],
+      "middle-note": [
+        "Lily-of-the-Valley",
+        "Jasmine",
+        "Violet",
+        "Nutmeg",
+        "Rose",
+        "Orris-Root",
+        "Freesia"
+      ],
+      "base-note": [
+        "Green-Accord",
+        "Musk",
+        "Cedar",
+        "Sandalwood",
+        "Oakmoss",
+        "Green-Tea",
+        "Amber"
+      ]
+    },
+    "scent": "citrus",
+    "halal": true,
+    "volume": ["50ml", "100ml", "266ml"],
+    "brand": [3003, 1001]
+  },
+  {
+    "_id": 2002,
+    "name": "Amarige",
+    "description": "Lovers of green tea will treasure this timely creation",
+    "type": "synthetic",
+    "yearLaunch": 1991,
+    "price": 115.5,
+    "color": "white",
+    "pic": "url picture",
+    "occasion": "office",
+    "ingredient": {
+      "top-note": [
+        "peach",
+        "plum",
+        "orange",
+        "mandarin",
+        "rose wood",
+        "neroli"
+      ],
+      "middle-note": [
+        " mimosa",
+        "neroli",
+        "tuberose",
+        "gardenia",
+        "acacia",
+        "black currant"
+      ],
+      "base-note": [
+        "musk",
+        "sandalwood",
+        "vanilla",
+        "amber",
+        "Tonka bean",
+        "cedarr"
+      ]
+    },
+    "scent": "cedar",
+    "halal": true,
+    "volume": ["8ml", "30ml", "200ml"],
+    "brand": [3002, 1002]
+  },
+  {
+    "_id": 2003,
+    "name": "La Nuit De L'homme",
+    "description": "Lovers of green tea will treasure this timely creation",
+    "type": "synthetic",
+    "yearLaunch": 2009,
+    "price": 138.95,
+    "color": "white",
+    "pic": "url picture",
+    "occasion": "office",
+    "ingredient": {
+      "top-note": ["Bergamot", "Cardamom"],
+      "middle-note": ["Lavender", "Cedarwood"],
+      "base-note": [" Vetiver", "Coumarin"]
+    },
+    "scent": "romantic",
+    "halal": true,
+    "volume": ["8ml", "60ml", "200ml"],
+    "brand": [3001, 1003]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "_id": 1001,
+    "name": "Calvin Klein",
+    "description": "The company, which became famous for its designer underwear and denim lines in the 1980s, specializes in mass-market ready-to-wear clothing for all genders and age groups as well as leather products, lifestyle accessories and shoes, home furnishings, perfume/cosmetics, eyewear, jewellery and watches in the mid-price segment.",
+    "url": "https://www.calvinklein.com.sg/en/men/"
+  },
+  {
+    "_id": 1002,
+    "name": "Givenchy",
+    "description": "Givenchy is a French luxury fashion and perfume house. It hosts the brand of haute couture and ready-to-wear clothing, accessories, perfumes and cosmetics of Parfums Givenchy. ",
+    "url": "https://www.givenchy.com/int/en/homepage"
+  },
+  {
+    "id": 1003,
+    "name": "Yves Saint Laurent",
+    "description": "Yves Saint Laurent SAS, also known as Saint Laurent and YSL, is a French luxury fashion house that specializes in haute couture, ready-to-wear, leather accessories, and footwear. Its cosmetics line, YSL Beauty, is owned by L'Oréal.",
+    "url": "https://www.ysl.com/en-sg"
+  }
+]
