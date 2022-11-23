@@ -4,7 +4,7 @@
     "name": "Alpha",
     "email": "alpha@gmail.com",
     "description": "This products is so so",
-    "dateTime": "2020-10-25",
+    "date": "2020-10-25",
     "rating": 3,
     "user": [3001],
     "brand": [1002]
@@ -14,7 +14,7 @@
     "name": "Beta",
     "email": "beta@gmail.com",
     "description": "This products is good",
-    "dateTime": "2020-07-15",
+    "date": "2020-07-15",
     "rating": 4,
     "user": [3001],
     "brand": [1002]
@@ -24,7 +24,7 @@
     "name": "Delta",
     "email": "delta@gmail.com",
     "description": "This products is good",
-    "dateTime": "2021-07-07",
+    "date": "2021-07-07",
     "rating": 5,
     "user": [3001],
     "brand": [1002]

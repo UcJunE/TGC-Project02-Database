@@ -8,6 +8,7 @@ async function connect(url, databaseName) {
   });
 
   _db = client.db(databaseName);
+  return _db;
 }
 
 function getDB() {
