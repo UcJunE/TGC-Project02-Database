@@ -28,6 +28,10 @@ app.use(express.json());
 
 // we communicate api with JSON format . and the response we get is in JSON format file.
 
+//fetch over validation schema
+const validate = require("./Middleware/validation");
+const validationList = require("./Validation/validationList");
+
 async function main() {
   await MongoUtil.connect(MONGO_URI, "perfumeDB");
 
