@@ -9,7 +9,7 @@ const perfumeSchema = object({
   description: stringCondition,
   type: string().required(),
   yearLaunch: number().required(),
-  price: float().required(),
+  price: number().required(),
   color: string().required(),
   pic: string().url("This must be a valid URL").required(),
   occasion: string().required(),

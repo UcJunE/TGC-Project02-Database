@@ -29,12 +29,12 @@ app.use(express.json());
 // we communicate api with JSON format . and the response we get is in JSON format file.
 
 //fetch over validation schema
-const validate = require("./Middleware/validation");
-const validationList = require("./Validation/validationList");
+// const validate = require("./Middleware/validation");
+// const validationList = require("./Validation/validationList");
 
 async function main() {
   await MongoUtil.connect(MONGO_URI, "perfumeDB");
-
+  const db = MongoUtil.getDB();
   console.log("Database Connected");
 
   //this should be the landing page
@@ -102,6 +102,14 @@ async function main() {
     }
   });
 
+  //to get the data of brand collection
+  app.get("/add-brand", async function (req, res) {
+    const result = await db.collection("brand").find({}).toArray();
+    res.status(200);
+    res.json(result);
+    console.log(result);
+  });
+
   //create new brand
   app.post("/add-brand", async function (req, res) {
     let { name, description, brandUrl } = req.body;
@@ -123,6 +131,13 @@ async function main() {
     }
   });
 
+  // to get the data of the user collection
+  app.get("/add-user", async function (req, res) {
+    const result = await db.collection("user").find({}).toArray();
+    res.status(200);
+    res.json(result);
+    console.log(result);
+  });
   //create user
   app.post("/add-user", async function (req, res) {
     let brand = [];
@@ -154,6 +169,13 @@ async function main() {
     }
   });
 
+  // to get the data from review collection
+  app.get("/add-review", async function (req, res) {
+    const result = await db.collection("review").find({}).toArray();
+    res.status(200);
+    res.json(result);
+    console.log(result);
+  });
   //create / add review
   app.post("/add-review", async function (req, res) {
     let user = [];
