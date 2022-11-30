@@ -69,7 +69,8 @@ async function main() {
     //search via scent(ok)
     if (req.query.scent) {
       criteria["scent"] = {
-        $eq: req.query.scent,
+        $regex: req.query.scent,
+        $options: "i",
       };
     }
 
@@ -84,10 +85,13 @@ async function main() {
 
     console.log(criteria);
     // console.log(perfume);
-    res.json({ perfume });
+    res.json(perfume);
   });
   //create / add new perfume
   app.post("/add-perfume", async function (req, res) {
+    let topNote = req.body.ingredient.topNote;
+    let middleNote = req.body.ingredient.middleNote;
+    let baseNote = req.body.ingredient.baseNote;
     let {
       name,
       description,
@@ -101,7 +105,6 @@ async function main() {
       halal,
       createdBy,
       volume,
-      ingredient,
     } = req.body;
 
     try {
@@ -115,7 +118,11 @@ async function main() {
         color: color,
         picUrl: picUrl,
         occasion: occasion,
-        ingredient: ingredient,
+        ingredient: {
+          topNote: topNote,
+          middleNote: middleNote,
+          baseNote: baseNote,
+        },
         scent: scent,
         halal: halal,
         volume: volume,
@@ -383,8 +390,9 @@ async function main() {
 
 main();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8888;
 
 app.listen(port, function () {
   console.log("Server has started");
+  console.log(port);
 });

@@ -77,23 +77,34 @@
     "brand": [3002, 1002]
   },
   {
-    "_id": 2003,
     "name": "La Nuit De L'homme",
-    "description": "Lovers of green tea will treasure this timely creation",
-    "type": "synthetic",
+    "description": "Yves Saint Laurent La Nuit de l`Homme is a new masculine representative of the house of YSL and it appeared on the market in March 2009. The perfume is announced as one full of contrasts and tensions. It is recommended for daily wear.",
+    "type": "natural",
     "yearLaunch": 2009,
     "price": 138.95,
-    "color": "white",
-    "pic": "url picture",
+    "color": "clear",
+    "picUrl": "https://fimgs.net/mdimg/perfume/375x500.5521.jpg",
     "occasion": "office",
     "ingredient": {
-      "top-note": ["Bergamot", "Cardamom"],
-      "middle-note": ["Lavender", "Cedarwood"],
-      "base-note": [" Vetiver", "Coumarin"]
+      "topNote": ["Bergamot", "Cardamom"],
+      "middleNote": ["Lavender", "Cedarwood"],
+      "baseNote": [" Vetiver", "Coumarin"]
     },
     "scent": "romantic",
-    "halal": true,
+    "halal": "no",
     "volume": ["8ml", "60ml", "200ml"],
-    "brand": [3001, 1003]
+    "brand": "637b482321b911ec53823566",
+    "createdBy": {
+      "userName": "cherry",
+      "userEmail": "cherry@gmail.com"
+    },
+    "reviewBy": [
+      {
+        "reviewId": "6380590591c5fb85555acbd9",
+        "reviewText": "This smell nice",
+        "reviewEmail": "jerry@gmail.com",
+        "reviewUsername": "jerry123"
+      }
+    ]
   }
 ]
