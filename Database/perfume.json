@@ -82,6 +82,7 @@
     "type": "natural",
     "yearLaunch": 2009,
     "price": 138.95,
+    "rating": 5,
     "color": "clear",
     "picUrl": "https://fimgs.net/mdimg/perfume/375x500.5521.jpg",
     "occasion": "office",
@@ -93,7 +94,11 @@
     "scent": "romantic",
     "halal": "no",
     "volume": ["8ml", "60ml", "200ml"],
-    "brand": "637b482321b911ec53823566",
+    "brand": {
+      "name": "Yves Saint Laurent",
+      "description": "Yves Saint Laurent SAS, also known as Saint Laurent and YSL, is a French luxury fashion house that specializes in haute couture, ready-to-wear, leather accessories, and footwear. Its cosmetics line, YSL Beauty, is owned by L'Oréal.",
+      "brandUrl": "https://www.ysl.com/en-sg"
+    },
     "createdBy": {
       "userName": "cherry",
       "userEmail": "cherry@gmail.com"

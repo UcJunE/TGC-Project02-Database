@@ -105,6 +105,8 @@ async function main() {
       halal,
       createdBy,
       volume,
+      rating,
+      brand,
     } = req.body;
 
     try {
@@ -127,6 +129,8 @@ async function main() {
         halal: halal,
         volume: volume,
         createdBy: createdBy,
+        rating: rating,
+        brand: brand,
       });
       res.status(200);
       res.send(result);
@@ -156,6 +160,8 @@ async function main() {
       occasion,
       scent,
       halal,
+      brand,
+      rating,
     } = req.body;
 
     try {
@@ -177,6 +183,8 @@ async function main() {
             halal: halal,
             volume: volume,
             createdBy: createdBy,
+            brand: brand,
+            rating: rating,
           },
         }
       );
