@@ -58,7 +58,20 @@ async function main() {
         $eq: req.query.type,
       };
     }
-
+    //search by rating
+    if (req.query.rating) {
+      criteria["rating"] = {
+        $eq: req.query.rating,
+      };
+    }
+    //search by brand
+    if (req.query.brand) {
+      criteria["brand.name"] = {
+        $regex: req.query.brand,
+        $options: "i",
+      };
+      console.log();
+    }
     //search by halal(ok).in fe can render true / false
     if (req.query.halal) {
       criteria["halal"] = {
@@ -89,9 +102,9 @@ async function main() {
   });
   //create / add new perfume
   app.post("/add-perfume", async function (req, res) {
-    let topNote = req.body.ingredient.topNote;
-    let middleNote = req.body.ingredient.middleNote;
-    let baseNote = req.body.ingredient.baseNote;
+    let topNote = req.body.topNote;
+    let middleNote = req.body.middleNote;
+    let baseNote = req.body.baseNote;
     let {
       name,
       description,
@@ -100,12 +113,9 @@ async function main() {
       price,
       color,
       picUrl,
-      occasion,
       scent,
-      halal,
       createdBy,
       volume,
-      rating,
       brand,
     } = req.body;
 
@@ -116,20 +126,14 @@ async function main() {
         description: description,
         type: type,
         yearLaunch: yearLaunch,
-        price: price,
-        color: color,
         picUrl: picUrl,
-        occasion: occasion,
         ingredient: {
-          topNote: topNote,
-          middleNote: middleNote,
-          baseNote: baseNote,
+          topNote: [topNote],
+          middleNote: [middleNote],
+          baseNote: [baseNote],
         },
         scent: scent,
-        halal: halal,
-        volume: volume,
         createdBy: createdBy,
-        rating: rating,
         brand: brand,
       });
       res.status(200);
