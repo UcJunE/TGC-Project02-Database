@@ -66,7 +66,7 @@ async function main() {
     }
     //search by brand
     if (req.query.brand) {
-      criteria["brand.name"] = {
+      criteria["brand"] = {
         $regex: req.query.brand,
         $options: "i",
       };
@@ -149,10 +149,9 @@ async function main() {
 
   // update particular document via id
   app.put("/update-perfume/:id", async (req, res) => {
-    let createdBy = {};
-    let volume = [];
-    let ingredient = [];
-
+    let topNote = req.body.topNote;
+    let middleNote = req.body.middleNote;
+    let baseNote = req.body.baseNote;
     let {
       name,
       description,
@@ -161,11 +160,10 @@ async function main() {
       price,
       color,
       picUrl,
-      occasion,
       scent,
-      halal,
+      createdBy,
+      volume,
       brand,
-      rating,
     } = req.body;
 
     try {
@@ -178,17 +176,15 @@ async function main() {
             description: description,
             type: type,
             yearLaunch: yearLaunch,
-            price: price,
-            color: color,
             picUrl: picUrl,
-            occasion: occasion,
-            ingredient: ingredient,
+            ingredient: {
+              topNote: [topNote],
+              middleNote: [middleNote],
+              baseNote: [baseNote],
+            },
             scent: scent,
-            halal: halal,
-            volume: volume,
             createdBy: createdBy,
             brand: brand,
-            rating: rating,
           },
         }
       );
@@ -199,9 +195,9 @@ async function main() {
       res.send(result);
     } catch (e) {
       res.status(500);
-      res.send({
-        error: "Internal server error . Please contact administrator",
-      });
+      // res.send({
+      //   error: "Internal server error . Please contact administrator",
+      // });
     }
   });
 
